@@ -11,7 +11,7 @@ const password = "sliit@123"; // bad practice, use hashed / encrypted strings (o
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.send("Onboarding App Server - v1.0.0 | @thisura98");    
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.post('/login', (req, res) => {
