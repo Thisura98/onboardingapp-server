@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const port = 80;
+const port = process.env.port || 80; // use heroku provided port or localhost:80
 
 const username = "EMP001";
 const password = "sliit@123"; // bad practice, use hashed / encrypted strings (or tokens) for passwords
