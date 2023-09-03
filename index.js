@@ -79,5 +79,5 @@ app.get('/nimona', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("Onboarding App v1.0.0 listening on port 80");
+    console.log("Onboarding App v1.0.0 listening on port:", port);
 })
