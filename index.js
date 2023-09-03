@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
+const { readFile } = require('fs/promises');
 const port = process.env.PORT || 80; // use heroku provided port or localhost:80
 
 const username = "EMP001";
